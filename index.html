@@ -207,7 +207,7 @@
   /* ---------- forms ---------- */
   .field{margin-top:16px;}
   .field label{display:block;font-size:12px;font-weight:600;color:var(--f2,var(--ink2));margin-bottom:7px;letter-spacing:.01em;}
-  .field input[type=text],.field input[type=email],.field input[type=password],.field select{
+  .field input[type=text],.field input[type=email],.field input[type=password],.field input[type=tel],.field select{
     width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--fl,var(--line));background:var(--fb,#fff);font-size:15px;color:var(--f1,var(--ink));font-family:var(--font);
     appearance:none;-webkit-appearance:none;transition:border-color .2s, box-shadow .2s;}
   .field select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a1a1a6' stroke-width='2'><path d='M6 9l6 6 6-6'/></svg>");background-repeat:no-repeat;background-position:right 12px center;background-size:16px;padding-right:36px;}
@@ -397,6 +397,44 @@
     .fab{padding:12px;}
     .hue-dot{width:46px;height:46px;}
   }
+  /* sosyal ağ */
+  .soc-actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px;}
+  .soc-actions .btn-lg{padding:10px 18px;font-size:14px;}
+  .plist{display:flex;flex-direction:column;gap:8px;}
+  .person{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:16px;background:rgba(255,255,255,.7);border:1px solid var(--line2);cursor:pointer;transition:.2s;}
+  .person:hover{background:#fff;box-shadow:0 6px 22px rgba(60,40,10,.08);}
+  .pinfo{flex:1;min-width:0;display:flex;flex-direction:column;}
+  .pinfo b{font-size:15px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .pinfo span{font-size:12.5px;color:var(--ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .avatar.sm{width:40px;height:40px;font-size:16px;flex:none;display:inline-flex;align-items:center;justify-content:center;}
+  .avatar.big{width:104px;height:104px;font-size:42px;display:flex;align-items:center;justify-content:center;flex:none;}
+  .cbadge{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;padding:2px 8px;border-radius:980px;background:#111;color:#fff;vertical-align:middle;margin-left:4px;}
+  .uhead{display:flex;gap:28px;align-items:center;margin:18px 0 34px;flex-wrap:wrap;}
+  .uinfo h2{font-size:34px;} .uhandle{color:var(--ink2);font-size:15px;margin-top:2px;} .uinfo p{margin-top:10px;max-width:520px;}
+  .ustats{display:flex;gap:22px;margin:14px 0;font-size:14px;color:var(--ink2);} .ustats b{color:var(--ink);font-size:18px;} .ustats a{cursor:pointer;}
+  .uactions{display:flex;gap:10px;flex-wrap:wrap;}
+  .members{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;}
+  .chip-m{display:inline-flex;align-items:center;gap:8px;padding:4px 12px 4px 4px;border-radius:980px;background:rgba(255,255,255,.8);border:1px solid var(--line2);font-size:13px;cursor:pointer;}
+  .rm-btn{position:absolute;top:10px;right:10px;z-index:4;width:28px;height:28px;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;font-size:12px;}
+  .addedby{font-size:11.5px;color:var(--ink2);margin:6px 4px 0;}
+  .atb-row{display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:10px;border-radius:14px;margin-top:8px;border:1px solid var(--line2);background:#fff;}
+  .atb-row:hover{border-color:var(--blue);} .atb-row i{width:44px;height:44px;border-radius:10px;flex:none;} .atb-row small{display:block;color:var(--ink2);font-size:12px;}
+  .nbadge,.ubadge{background:#e0452f;color:#fff;border-radius:980px;font-size:10.5px;font-weight:700;padding:1px 6px;margin-left:5px;vertical-align:middle;}
+  .seller-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;} .seller-row a{cursor:pointer;} .seller-row small{color:var(--ink2);}
+  .chat-wrap{display:grid;grid-template-columns:320px 1fr;gap:16px;height:min(68vh,640px);margin-top:12px;}
+  .chat-side{overflow:auto;border-radius:20px;background:rgba(255,255,255,.75);border:1px solid var(--line2);padding:8px;}
+  .conv{display:flex;align-items:center;gap:10px;padding:10px;border-radius:14px;cursor:pointer;} .conv:hover,.conv.on{background:rgba(0,113,227,.09);}
+  .chat-main{display:flex;flex-direction:column;border-radius:20px;background:rgba(255,255,255,.75);border:1px solid var(--line2);overflow:hidden;}
+  .chat-head{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line2);cursor:pointer;} .chat-head span{color:var(--ink2);font-size:13px;}
+  .chat-body{flex:1;overflow:auto;padding:16px;display:flex;flex-direction:column;gap:8px;}
+  .chat-empty{margin:auto;color:var(--ink2);font-size:14px;text-align:center;padding:20px;}
+  .bub{max-width:72%;align-self:flex-start;background:#efe9dc;border-radius:18px 18px 18px 4px;padding:9px 13px;font-size:14.5px;line-height:1.4;word-break:break-word;}
+  .bub.me{align-self:flex-end;background:var(--blue);color:#fff;border-radius:18px 18px 4px 18px;}
+  .bub small{display:block;font-size:10.5px;opacity:.6;margin-top:3px;text-align:right;}
+  .bub-p{font-size:12px;padding:5px 9px;border-radius:10px;background:rgba(0,0,0,.08);margin-bottom:6px;cursor:pointer;}
+  .chat-input{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line2);} .chat-input input{flex:1;padding:12px 16px;border-radius:980px;border:1px solid var(--line);font-family:var(--font);font-size:15px;background:#fff;} .chat-input input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 4px rgba(0,113,227,.15);}
+  .seg2{display:flex;gap:6px;margin:14px 0 0;} .seg2 button{flex:1;padding:10px;border-radius:12px;border:1px solid var(--line2);background:#fff;font-size:14px;} .seg2 button.on{background:#111;color:#fff;border-color:#111;}
+  @media(max-width:760px){ .chat-wrap{grid-template-columns:1fr;height:auto;} .chat-side{max-height:220px;} .chat-main{min-height:420px;} .uhead{gap:16px;} }
 </style>
 </head>
 <body>
@@ -534,6 +572,7 @@ window.toast=toast;
 /* ============ AUTH ============ */
 function setAuth(a){ AUTH=a; try{ localStorage.setItem('cd_auth',JSON.stringify(a)); }catch(e){} renderNav(); }
 function logout(){
+  stopStream(); SOC.convs=null; SOC.thread=[]; SOC.peer=null; SOC.boards=null; SOC.feed=null; SOC.unread=0;
   AUTH=null; try{ localStorage.removeItem('cd_auth'); }catch(e){}
   PROFILE_MINE=null; PROFILE_SAVED=null; PROFILE_ME=null;
   toast('Çıkış yapıldı.'); renderNav(); setView('home');
@@ -549,24 +588,34 @@ function switchAuthTab(t){ authTab=t; document.getElementById('modalRoot').inner
 window.switchAuthTab=switchAuthTab;
 
 let MFA_TOKEN=null, RESET_TOKEN=null;
+const SIGNUP={type:'individual',name:'',email:'',phone:'',company:''};
+function setSignupType(t){ const v=id=>{ const e=document.getElementById(id); return e?e.value:''; }; SIGNUP.name=v('signupName')||SIGNUP.name; SIGNUP.email=v('signupEmail')||SIGNUP.email; SIGNUP.phone=v('signupPhone')||SIGNUP.phone; SIGNUP.company=v('signupCompany')||SIGNUP.company; SIGNUP.type=t; switchAuthTab('signup'); }
+window.setSignupType=setSignupType;
 function renderAuthModal(){
   const t=authTab;
   const head={login:['Tekrar hoş geldin','Devam etmek için giriş yap.'],signup:['Hesap oluştur','Renk analizlerini kaydetmek için bir hesap oluştur.'],
     forgot:['Şifreni sıfırla','E-posta adresini yaz, sıfırlama bağlantısı gönderelim.'],
     mfa:['İki adımlı doğrulama','Authenticator uygulamandaki 6 haneli kodu gir. Yedek kodunu da kullanabilirsin.'],
-    reset:['Yeni şifre belirle','Yeni şifren en az 8 karakter olmalı.']}[t];
+    reset:['Yeni şifre belirle','Yeni şifren en az 8 karakter olmalı.'],
+    phone:['Telefon numaran','Arkadaşların seni bulabilsin ve sipariş bildirimleri için gerekli.']}[t];
   const tabs=(t==='login'||t==='signup');
   const body={
     login:`<div class="field"><label>E-posta</label><input type="email" id="loginEmail" autocomplete="email"></div>
       <div class="field"><label>Şifre</label><input type="password" id="loginPassword" autocomplete="current-password" onkeydown="if(event.key==='Enter')submitLogin()"></div>
       <button class="btn-analyze" id="authSubmitBtn" onclick="submitLogin()">Giriş Yap</button>
       <div style="text-align:center;margin-top:14px;"><span class="link-arrow" style="font-size:13.5px;" onclick="switchAuthTab('forgot')">Şifremi unuttum</span></div>`,
-    signup:`<div class="field"><label>İsim</label><input type="text" id="signupName" autocomplete="name"></div>
-      <div class="field"><label>E-posta</label><input type="email" id="signupEmail" autocomplete="email"></div>
+    signup:`<div class="seg2"><button class="${SIGNUP.type==='individual'?'on':''}" onclick="setSignupType('individual')">Bireysel</button><button class="${SIGNUP.type==='company'?'on':''}" onclick="setSignupType('company')">Şirket</button></div>
+      ${SIGNUP.type==='company'?`<div class="field"><label>Şirket adı</label><input type="text" id="signupCompany" value="${esc(SIGNUP.company)}" autocomplete="organization"></div>`:''}
+      <div class="field"><label>${SIGNUP.type==='company'?'Yetkili adı':'İsim'}</label><input type="text" id="signupName" value="${esc(SIGNUP.name)}" autocomplete="name"></div>
+      <div class="field"><label>E-posta</label><input type="email" id="signupEmail" value="${esc(SIGNUP.email)}" autocomplete="email"></div>
+      <div class="field"><label>Telefon</label><input type="tel" id="signupPhone" value="${esc(SIGNUP.phone)}" autocomplete="tel" placeholder="0532 123 45 67"></div>
       <div class="field"><label>Şifre (8-72 karakter)</label><input type="password" id="signupPassword" autocomplete="new-password" onkeydown="if(event.key==='Enter')submitSignup()"></div>
       <label class="chk"><input type="checkbox" id="kvkkOk"><span><a onclick="closeModal();openLegal('aydinlatma')">Aydınlatma Metni</a>’ni ve <a onclick="closeModal();openLegal('sartlar')">Kullanım Şartları</a>’nı okudum, kabul ediyorum.</span></label>
       <label class="chk"><input type="checkbox" id="mktOk"><span>Kampanya ve yenilik e-postaları almak istiyorum (isteğe bağlı, istediğin zaman kapatabilirsin).</span></label>
       <button class="btn-analyze" id="authSubmitBtn" onclick="submitSignup()">Kayıt Ol</button>`,
+    phone:`<div class="field"><label>Telefon numaran</label><input type="tel" id="phoneInput" autocomplete="tel" placeholder="0532 123 45 67" onkeydown="if(event.key==='Enter')submitPhone()"></div>
+      <label class="chk"><input type="checkbox" id="phoneFind" checked><span>Rehberinde numaram olan arkadaşlarım beni ColorDetect’te bulabilsin.</span></label>
+      <button class="btn-analyze" id="authSubmitBtn" onclick="submitPhone()">Kaydet</button>`,
     forgot:`<div class="field"><label>E-posta</label><input type="email" id="forgotEmail" autocomplete="email" onkeydown="if(event.key==='Enter')submitForgot()"></div>
       <button class="btn-analyze" id="authSubmitBtn" onclick="submitForgot()">Bağlantı Gönder</button>
       <div style="text-align:center;margin-top:14px;"><span class="link-arrow" style="font-size:13.5px;" onclick="switchAuthTab('login')">‹ Girişe dön</span></div>`,
@@ -597,7 +646,7 @@ function setAuthLoading(loading,labelTxt){
   btn.innerHTML=loading?'<span class="loading-spinner"></span>Yükleniyor':labelTxt;
 }
 function afterLogin(data){
-  setAuth(data); closeModal(); toast(`Hoş geldin, ${data.user.name}.`); PROFILE_MINE=null; PROFILE_SAVED=null; PROFILE_ME=null; render();
+  setAuth(data); closeModal(); toast(`Hoş geldin, ${data.user.name}.`); PROFILE_MINE=null; PROFILE_SAVED=null; PROFILE_ME=null; render(); bootSocial();
 }
 function handleAuthResponse(data){
   if(data.needs2fa){ MFA_TOKEN=data.mfaToken; switchAuthTab('mfa'); setTimeout(()=>{ const c=document.getElementById('mfaCode'); if(c) c.focus(); },50); return; }
@@ -615,11 +664,15 @@ window.submitLogin=submitLogin;
 async function submitSignup(){
   const name=document.getElementById('signupName').value.trim();
   const email=document.getElementById('signupEmail').value.trim();
+  const phone=document.getElementById('signupPhone').value.trim();
   const password=document.getElementById('signupPassword').value;
-  if(!name||!email||!password) return showAuthError('Tüm alanları doldur.');
+  const coEl=document.getElementById('signupCompany'), companyName=coEl?coEl.value.trim():'';
+  if(!name||!email||!password||!phone) return showAuthError('Tüm alanları doldur.');
+  if(SIGNUP.type==='company'&&!companyName) return showAuthError('Şirket adı gerekli.');
+  if(!normPhone(phone)) return showAuthError('Geçerli bir telefon numarası gir (örn. 0532 123 45 67).');
   if(!document.getElementById('kvkkOk').checked) return showAuthError('Devam etmek için Aydınlatma Metni ve Kullanım Şartları’nı onaylamalısın.');
   setAuthLoading(true);
-  try{ const data=await api('/api/auth/signup',{method:'POST',body:{name,email,password,kvkk:true,marketing:document.getElementById('mktOk').checked}}); afterLogin(data); }
+  try{ const data=await api('/api/auth/signup',{method:'POST',body:{name,email,password,phone,accountType:SIGNUP.type,companyName,kvkk:true,marketing:document.getElementById('mktOk').checked}}); afterLogin(data); }
   catch(e){ setAuthLoading(false,'Kayıt Ol'); showAuthError(e.message==='Failed to fetch'?'Sunucuya ulaşılamadı. Birkaç saniye bekleyip tekrar dene.':e.message); }
 }
 window.submitSignup=submitSignup;
@@ -652,9 +705,10 @@ window.submitReset=submitReset;
 
 /* ============ NAV ============ */
 function renderNav(){
-  const links=[['home','Ana Sayfa'],['analyze','Analiz'],['market','Pazar Yeri'],['profile','Profil']];
+  const links=[['home','Ana Sayfa'],['analyze','Analiz'],['market','Pazar Yeri'],['people','Topluluk'],['messages','Mesajlar'],['profile','Profil']];
+  const act=v=>({user:'people',boards:'people',board:'people',detail:'market'}[S.view]||S.view)===v;
   document.getElementById('navLinks').innerHTML=links.map(([v,l])=>
-    `<a class="${S.view===v?'active':''}" onclick="setView('${v}')">${l}</a>`).join('');
+    `<a class="${act(v)?'active':''}" onclick="setView('${v}')">${l}${v==='messages'?`<span class="nbadge" id="msgBadge" style="display:${SOC.unread?'inline-block':'none'}">${SOC.unread}</span>`:''}</a>`).join('');
   const right=document.getElementById('navRight');
   right.innerHTML=AUTH
     ? `<span class="pill-btn" style="cursor:default;">${esc(AUTH.user.name)}</span><button class="pill-btn solid" onclick="logout()">Çıkış</button>`
@@ -973,20 +1027,23 @@ function mountRoom(container, hexes, opts={}){
 }
 
 /* ============ FOTOĞRAF → 3D ÜRÜN ============ */
-function _cutout(img,cut){
+function _cutout(img,cut,maskImg){
   const maxS=420, sc=Math.min(1,maxS/Math.max(img.width,img.height));
   const w=Math.max(8,Math.round(img.width*sc)), h=Math.max(8,Math.round(img.height*sc));
   const c=document.createElement('canvas'); c.width=w; c.height=h;
   const x=c.getContext('2d',{willReadFrequently:true}); x.drawImage(img,0,0,w,h);
   const id=x.getImageData(0,0,w,h), d=id.data, N=w*h;
-  let fg=new Uint8Array(N).fill(1), ok=false;
+  let fg=new Uint8Array(N).fill(1), ok=false, bgSd=0;
   if(cut){
+    if(maskImg){ const mc=document.createElement('canvas'); mc.width=w; mc.height=h; const mx2=mc.getContext('2d',{willReadFrequently:true}); mx2.drawImage(maskImg,0,0,w,h);
+      const md=mx2.getImageData(0,0,w,h).data; for(let i=0;i<N;i++) fg[i]=md[i*4+3]>110?1:0; }
+    else {
     // kenar piksellerinden arka plan rengi
     const edge=[]; for(let i=0;i<w;i++){ edge.push(i,(h-1)*w+i); } for(let j=0;j<h;j++){ edge.push(j*w,j*w+w-1); }
     let mr=0,mg=0,mb=0; edge.forEach(p=>{ mr+=d[p*4]; mg+=d[p*4+1]; mb+=d[p*4+2]; });
     mr/=edge.length; mg/=edge.length; mb/=edge.length;
     let v=0; edge.forEach(p=>{ v+=(d[p*4]-mr)**2+(d[p*4+1]-mg)**2+(d[p*4+2]-mb)**2; });
-    const sd=Math.sqrt(v/edge.length/3), T=Math.min(95,Math.max(34,sd*2.4+26));
+    const sd=Math.sqrt(v/edge.length/3); bgSd=sd; const T=Math.min(95,Math.max(34,sd*2.4+26));
     const isBg=p=>{ const dr=d[p*4]-mr,dg=d[p*4+1]-mg,db=d[p*4+2]-mb; return Math.sqrt(dr*dr+dg*dg+db*db)<T; };
     const bg=new Uint8Array(N), st=[];
     edge.forEach(p=>{ if(!bg[p]&&isBg(p)){ bg[p]=1; st.push(p); } });
@@ -996,6 +1053,7 @@ function _cutout(img,cut){
       if(py>0){ const q=p-w; if(!bg[q]&&isBg(q)){ bg[q]=1; st.push(q);} }
       if(py<h-1){ const q=p+w; if(!bg[q]&&isBg(q)){ bg[q]=1; st.push(q);} } }
     for(let i=0;i<N;i++) fg[i]=bg[i]?0:1;
+    }
     // en büyük bileşen
     const lab=new Int32Array(N); let best=0,bestL=0,L=0; const cnt=[0];
     for(let i=0;i<N;i++){ if(!fg[i]||lab[i]) continue; L++; let n=0; const s2=[i]; lab[i]=L;
@@ -1004,8 +1062,19 @@ function _cutout(img,cut){
         if(p>=w&&fg[p-w]&&!lab[p-w]){lab[p-w]=L;s2.push(p-w);} if(p<N-w&&fg[p+w]&&!lab[p+w]){lab[p+w]=L;s2.push(p+w);} }
       cnt.push(n); if(n>best){best=n;bestL=L;} }
     for(let i=0;i<N;i++) fg[i]=(lab[i]&&cnt[lab[i]]>=best*.18)?1:0;
-    // 1px erozyon (kenar halesi)
-    const f2=fg.slice(); for(let j=1;j<h-1;j++) for(let i=1;i<w-1;i++){ const p=j*w+i; if(fg[p]&&(!fg[p-1]||!fg[p+1]||!fg[p-w]||!fg[p+w])) f2[p]=0; } fg=f2;
+    // ince yarıkları / parlak yansımaların oyuklarını kapat (kapama işlemi)
+    const morph=(src,grow)=>{ const o=src.slice(); for(let j=0;j<h;j++) for(let i=0;i<w;i++){ const p=j*w+i;
+      const n=[i>0?src[p-1]:(grow?0:1), i<w-1?src[p+1]:(grow?0:1), j>0?src[p-w]:(grow?0:1), j<h-1?src[p+w]:(grow?0:1)];
+      if(grow){ if(!src[p]&&(n[0]||n[1]||n[2]||n[3])) o[p]=1; } else { if(src[p]&&(!n[0]||!n[1]||!n[2]||!n[3])) o[p]=0; } } return o; };
+    for(let it=0;it<8;it++) fg=morph(fg,true);
+    for(let it=0;it<8;it++) fg=morph(fg,false);
+    // kapalı iç boşlukları doldur (kenara bağlı olmayan "arka plan" parçaları)
+    { const out=new Uint8Array(N), s3=[]; const seed=p=>{ if(!fg[p]&&!out[p]){ out[p]=1; s3.push(p); } };
+      for(let i=0;i<w;i++){ seed(i); seed((h-1)*w+i); } for(let j=0;j<h;j++){ seed(j*w); seed(j*w+w-1); }
+      while(s3.length){ const p=s3.pop(), px=p%w; if(px>0) seed(p-1); if(px<w-1) seed(p+1); if(p>=w) seed(p-w); if(p<N-w) seed(p+w); }
+      for(let i=0;i<N;i++) if(!fg[i]&&!out[i]) fg[i]=1; }
+    // 2px erozyon (kenar halesi)
+    for(let it=0;it<2;it++){ const f2=fg.slice(); for(let j=1;j<h-1;j++) for(let i=1;i<w-1;i++){ const p=j*w+i; if(fg[p]&&(!fg[p-1]||!fg[p+1]||!fg[p-w]||!fg[p+w])) f2[p]=0; } fg=f2; }
     let sum=0; for(let i=0;i<N;i++) sum+=fg[i]; const fr=sum/N; ok=fr>.06&&fr<.93;
   }
   if(!ok){ // yuvarlatılmış plaka
@@ -1014,31 +1083,35 @@ function _cutout(img,cut){
       if(inside){ const cx=Math.min(Math.max(i,mx+r),w-mx-r), cy=Math.min(Math.max(j,my+r),h-my-r); inside=((i-cx)**2+(j-cy)**2)<=r*r; }
       fg[j*w+i]=inside?1:0; }
   }
-  // mesafe dönüşümü (chamfer)
-  const dist=new Float32Array(N), INF=1e9;
-  for(let i=0;i<N;i++) dist[i]=fg[i]?INF:0;
-  for(let j=0;j<h;j++) for(let i=0;i<w;i++){ const p=j*w+i; if(!fg[p]) continue; let m=dist[p];
-    if(i>0) m=Math.min(m,dist[p-1]+1); if(j>0){ m=Math.min(m,dist[p-w]+1); if(i>0) m=Math.min(m,dist[p-w-1]+1.414); if(i<w-1) m=Math.min(m,dist[p-w+1]+1.414); } dist[p]=m; }
-  let mx=1; for(let j=h-1;j>=0;j--) for(let i=w-1;i>=0;i--){ const p=j*w+i; if(!fg[p]) continue; let m=dist[p];
-    if(i<w-1) m=Math.min(m,dist[p+1]+1); if(j<h-1){ m=Math.min(m,dist[p+w]+1); if(i<w-1) m=Math.min(m,dist[p+w+1]+1.414); if(i>0) m=Math.min(m,dist[p+w-1]+1.414); } dist[p]=m; if(m<INF&&m>mx) mx=m; }
-  const R=Math.max(4,mx*.62), dep=new Float32Array(N);
-  for(let i=0;i<N;i++){ if(!fg[i]){dep[i]=0;continue;} const t=Math.min(1,dist[i]/R); dep[i]=Math.sqrt(1-(1-t)*(1-t)); }
+  // kalınlık: her satırdaki gerçek genişliğe göre yuvarlak (eliptik) kesit
+  const dep=new Float32Array(N), colD=new Float32Array(N), cap=Math.max(w,h)*.30;
+  for(let j=0;j<h;j++){ let i=0; while(i<w){ if(!fg[j*w+i]){ i++; continue; } const st=i; while(i<w&&fg[j*w+i]) i++;
+    const half=(i-st)/2, cx=(st+i-1)/2, a=Math.min(half*.95,cap);
+    for(let k=st;k<i;k++){ const u=(k-cx)/Math.max(half,.5); dep[j*w+k]=a*Math.sqrt(Math.max(0,1-u*u)); } } }
+  // üst/alt kenarlar da yuvarlansın (sütun bazlı sınır)
+  for(let i=0;i<w;i++){ let j=0; while(j<h){ if(!fg[j*w+i]){ j++; continue; } const st=j; while(j<h&&fg[j*w+i]) j++;
+    const half=(j-st)/2, cy=(st+j-1)/2;
+    for(let k=st;k<j;k++){ const u=(k-cy)/Math.max(half,.5); colD[k*w+i]=Math.sqrt(Math.max(0,1-u*u)); } } }
+  for(let i=0;i<N;i++) if(fg[i]) dep[i]*=Math.sqrt(colD[i]);
   // yumuşat
-  for(let k=0;k<2;k++){ const o=dep.slice(); for(let j=1;j<h-1;j++) for(let i=1;i<w-1;i++){ const p=j*w+i; if(!fg[p]) continue; dep[p]=(o[p]*4+o[p-1]+o[p+1]+o[p-w]+o[p+w])/8; } }
-  // fotoğraf kabartması
-  for(let i=0;i<N;i++){ if(!fg[i]) continue; const lum=(d[i*4]*.3+d[i*4+1]*.59+d[i*4+2]*.11)/255; dep[i]+= (lum-.5)*.05*dep[i]; }
-  return {w,h,fg,dep,src:id,fitted:ok};
+  for(let k=0;k<3;k++){ const o=dep.slice(); for(let j=1;j<h-1;j++) for(let i=1;i<w-1;i++){ const p=j*w+i; if(!fg[p]) continue; dep[p]=(o[p]*4+o[p-1]+o[p+1]+o[p-w]+o[p+w])/8; } }
+  return {w,h,fg,dep,src:id,fitted:ok,bgSd};
 }
 function _recolorCanvas(cu,hex,mean){
   const {w,h,fg,src}=cu, out=document.createElement('canvas'); out.width=w; out.height=h;
   const x=out.getContext('2d'), id=x.createImageData(w,h), s=src.data, o=id.data;
   let th=0,ts=0,tl=0; if(hex){ [th,ts,tl]=_hsl(parseInt(hex.slice(1,3),16),parseInt(hex.slice(3,5),16),parseInt(hex.slice(5,7),16)); }
-  for(let i=0;i<w*h;i++){ const k=i*4; o[k+3]=fg[i]?255:0; if(!fg[i]){ o[k]=o[k+1]=o[k+2]=0; continue; }
+  for(let i=0;i<w*h;i++){ const k=i*4; o[k+3]=255; if(!fg[i]) continue;
     if(!hex){ o[k]=s[k]; o[k+1]=s[k+1]; o[k+2]=s[k+2]; continue; }
     const [,ss,ll]=_hsl(s[k],s[k+1],s[k+2]);
     const nl=Math.min(.97,Math.max(.04,ll+(tl-mean)*.85));
     const ns=ts*(.45+.55*Math.min(1,ss*1.6+.15));
     const [r,g,b]=_rgb(th,ns,nl); o[k]=r; o[k+1]=g; o[k+2]=b; }
+  // nesne dışındaki pikselleri en yakın nesne rengiyle doldur (kenarda siyah çizgi olmasın)
+  let have=Uint8Array.from(fg);
+  for(let it=0;it<6;it++){ const nh=have.slice(); for(let j=0;j<h;j++) for(let i=0;i<w;i++){ const p=j*w+i; if(have[p]) continue;
+      const q=(i>0&&have[p-1])?p-1:(i<w-1&&have[p+1])?p+1:(j>0&&have[p-w])?p-w:(j<h-1&&have[p+w])?p+w:-1;
+      if(q>=0){ o[p*4]=o[q*4]; o[p*4+1]=o[q*4+1]; o[p*4+2]=o[q*4+2]; nh[p]=1; } } have=nh; }
   x.putImageData(id,0,0); return out;
 }
 function _hsl(r,g,b){ r/=255;g/=255;b/=255; const M=Math.max(r,g,b),m=Math.min(r,g,b); let h=0,s=0; const l=(M+m)/2;
@@ -1047,6 +1120,10 @@ function _rgb(h,s,l){ if(s===0){ const v=Math.round(l*255); return [v,v,v]; }
   const q=l<.5?l*(1+s):l+s-l*s, p=2*l-q, f=t=>{ if(t<0)t+=1; if(t>1)t-=1; return t<1/6?p+(q-p)*6*t:t<.5?q:t<2/3?p+(q-p)*(2/3-t)*6:p; };
   return [Math.round(f(h+1/3)*255),Math.round(f(h)*255),Math.round(f(h-1/3)*255)]; }
 
+async function _mlMask(src){
+  const mod=await import('https://cdn.jsdelivr.net/npm/@imgly/background-removal@1.5.5/+esm');
+  const blob=await Promise.race([ mod.removeBackground(src,{model:'isnet_quint8',output:{format:'image/png'}}), new Promise((_,rej)=>setTimeout(()=>rej(new Error('zaman aşımı')),60000)) ]);
+  const url=URL.createObjectURL(blob), im=new Image(); await new Promise((ok,no)=>{ im.onload=ok; im.onerror=no; im.src=url; }); return im; }
 function mountPhoto(container,imgUrl,hexes,opts={}){
   container.innerHTML='';
   if(!can3D()){ no3dMsg(container); return null; }
@@ -1066,32 +1143,73 @@ function mountPhoto(container,imgUrl,hexes,opts={}){
   const state={cu:null,meanL:.5,color:opts.color||null,finish:opts.finish||'satin',mesh:[],tex:null,hint:!!opts.hint};
   const FIN={mat:[.92,0],satin:[.55,.04],gloss:[.2,.08],metal:[.32,.85]};
   const mats=[];
-  function build(img){
-    const cu=_cutout(img,opts.cut!==false); state.cu=cu;
+  function clearMeshes(){ state.mesh.forEach(m=>{ pivot.remove(m); m.geometry.dispose(); }); state.mesh=[]; mats.forEach(m=>m.dispose()); mats.length=0; }
+  function buildGeo(cu,Wd,Hd){
+    const w=cu.w,h=cu.h,fg=cu.fg,dep=cu.dep, zs=Wd/(w-1);
+    const P=new Float32Array(w*h*3), PB=new Float32Array(w*h*3), UV=new Float32Array(w*h*2), UVB=new Float32Array(w*h*2);
+    for(let j=0;j<h;j++) for(let i=0;i<w;i++){ const p=j*w+i, x=(i/(w-1)-.5)*Wd, y=(.5-j/(h-1))*Hd, z=dep[p]*zs;
+      P[p*3]=x; P[p*3+1]=y; P[p*3+2]=z; PB[p*3]=x; PB[p*3+1]=y; PB[p*3+2]=-z;
+      const u=(i+.5)/w, v=1-(j+.5)/h; UV[p*2]=u; UV[p*2+1]=v; UVB[p*2]=1-u; UVB[p*2+1]=v; }
+    const cell=new Uint8Array(w*h), idxF=[], idxB=[];
+    for(let j=0;j<h-1;j++) for(let i=0;i<w-1;i++){ const a=j*w+i; if(fg[a]&&fg[a+1]&&fg[a+w]&&fg[a+w+1]){ cell[a]=1; const b=a+1,c=a+w,d=c+1; idxF.push(a,c,b,b,c,d); idxB.push(a,b,c,b,d,c); } }
+    // yan duvarlar: ön ve arka yüzü kapatır (siyah yan yüz olmaz, STL kapalı olur)
+    const wp=[], wu=[];
+    const wall=(v1,v2,ox,oy)=>{
+      const A=[P[v1*3],P[v1*3+1],P[v1*3+2]], B=[P[v2*3],P[v2*3+1],P[v2*3+2]], A2=[A[0],A[1],-A[2]], B2=[B[0],B[1],-B[2]];
+      const ua=[UV[v1*2],UV[v1*2+1]], ub=[UV[v2*2],UV[v2*2+1]];
+      const tri=(p0,p1,p2,u0,u1,u2)=>{ const e1=[p1[0]-p0[0],p1[1]-p0[1],p1[2]-p0[2]], e2=[p2[0]-p0[0],p2[1]-p0[1],p2[2]-p0[2]];
+        const nx=e1[1]*e2[2]-e1[2]*e2[1], ny=e1[2]*e2[0]-e1[0]*e2[2];
+        if(nx*ox+ny*oy<0){ [p1,p2]=[p2,p1]; [u1,u2]=[u2,u1]; }
+        wp.push(...p0,...p1,...p2); wu.push(...u0,...u1,...u2); };
+      tri(A,B,B2,ua,ub,ub); tri(A,B2,A2,ua,ub,ua); };
+    for(let j=0;j<h-1;j++) for(let i=0;i<w-1;i++){ const a=j*w+i; if(!cell[a]) continue; const b=a+1,c=a+w,d=c+1;
+      if(j===0||!cell[a-w]) wall(a,b,0,1); if(j===h-2||!cell[a+w]) wall(c,d,0,-1);
+      if(i===0||!cell[a-1]) wall(a,c,-1,0); if(i===w-2||!cell[a+1]) wall(b,d,1,0); }
+    return {P,PB,UV,UVB,idxF,idxB,wp,wu};
+  }
+  function build(img,mask){
+    clearMeshes();
+    const cu=_cutout(img,opts.cut!==false,mask); state.cu=cu; state.img=img;
     let sl=0,n=0; for(let i=0;i<cu.w*cu.h;i++) if(cu.fg[i]){ const k=i*4,s=cu.src.data; sl+=_hsl(s[k],s[k+1],s[k+2])[2]; n++; } state.meanL=n?sl/n:.5;
-    const aspect=cu.w/cu.h, SZ=3.1, Wd=aspect>=1?SZ:SZ*aspect, Hd=aspect>=1?SZ/aspect:SZ, T=Math.min(Wd,Hd)*.2+.12;
-    const nx=Math.min(cu.w-1,200), ny=Math.min(cu.h-1,200), pos=[],uv=[],idxF=[],idxB=[],vis=[];
-    const at=(i,j)=>{ const px=Math.min(cu.w-1,Math.round(i/nx*(cu.w-1))), py=Math.min(cu.h-1,Math.round(j/ny*(cu.h-1))); return py*cu.w+px; };
-    for(let j=0;j<=ny;j++) for(let i=0;i<=nx;i++){ const p=at(i,j); pos.push((i/nx-.5)*Wd,(.5-j/ny)*Hd,cu.dep[p]*T); uv.push(i/nx,1-j/ny); vis.push(cu.fg[p]); }
-    for(let j=0;j<ny;j++) for(let i=0;i<nx;i++){ const a=j*(nx+1)+i,b=a+1,c=a+nx+1,dd=c+1;
-      if(vis[a]||vis[b]||vis[c]||vis[dd]){ idxF.push(a,c,b,b,c,dd); idxB.push(a,b,c,b,dd,c); } }
-    const mk=(back)=>{ const g=new THREE.BufferGeometry(); const P=pos.slice(), U=uv.slice();
-      if(back){ for(let k=2;k<P.length;k+=3) P[k]=-P[k]; for(let k=0;k<U.length;k+=2) U[k]=1-U[k]; }
-      g.setAttribute('position',new THREE.Float32BufferAttribute(P,3)); g.setAttribute('uv',new THREE.Float32BufferAttribute(U,2));
-      g.setIndex(back?idxB:idxF); g.computeVertexNormals(); return g; };
-    const mf=new THREE.MeshStandardMaterial({alphaTest:.5,side:THREE.FrontSide}), mb=new THREE.MeshStandardMaterial({alphaTest:.5,side:THREE.FrontSide,color:0xd8d8d8});
-    mats.push(mf,mb);
-    const front=new THREE.Mesh(mk(false),mf), back=new THREE.Mesh(mk(true),mb);
-    [front,back].forEach(m=>{ m.castShadow=true; m.receiveShadow=true; pivot.add(m); state.mesh.push(m); });
+    const aspect=cu.w/cu.h, SZ=3.1, Wd=aspect>=1?SZ:SZ*aspect, Hd=aspect>=1?SZ/aspect:SZ;
+    const g=buildGeo(cu,Wd,Hd); state.g=g;
+    const mk=(pos,uv,idx)=>{ const geo=new THREE.BufferGeometry(); geo.setAttribute('position',new THREE.BufferAttribute(pos,3)); geo.setAttribute('uv',new THREE.BufferAttribute(uv,2)); if(idx) geo.setIndex(idx); geo.computeVertexNormals(); return geo; };
+    const mf=new THREE.MeshStandardMaterial({side:THREE.FrontSide}), mb=new THREE.MeshStandardMaterial({side:THREE.FrontSide}), mw=new THREE.MeshStandardMaterial({side:THREE.FrontSide});
+    mats.push(mf,mb,mw);
+    const meshes=[ new THREE.Mesh(mk(g.P,g.UV,g.idxF),mf), new THREE.Mesh(mk(g.PB,g.UVB,g.idxB),mb) ];
+    if(g.wp.length) meshes.push(new THREE.Mesh(mk(new Float32Array(g.wp),new Float32Array(g.wu),null),mw));
+    meshes.forEach(m=>{ m.castShadow=true; m.receiveShadow=true; pivot.add(m); state.mesh.push(m); });
     pivot.position.y=Hd/2+.02; floor.position.y=0; state.H=Hd; state.W=Wd;
     recolor(); finish();
     cam.dist=Math.max(Wd,Hd)*2.9; cam.ty=Hd/2;
     if(!cu.fitted && opts.cut!==false) opts.onFallback&&opts.onFallback();
+    return cu;
+  }
+  function exportSTL(sizeMm){
+    const g=state.g; if(!g) return false;
+    const k=(sizeMm||80)/Math.max(state.W,state.H), tris=[];
+    const T=(a,b,c)=>tris.push([a,b,c]);
+    const V=(arr,i)=>[arr[i*3],arr[i*3+1],arr[i*3+2]];
+    for(let t=0;t<g.idxF.length;t+=3) T(V(g.P,g.idxF[t]),V(g.P,g.idxF[t+1]),V(g.P,g.idxF[t+2]));
+    for(let t=0;t<g.idxB.length;t+=3) T(V(g.PB,g.idxB[t]),V(g.PB,g.idxB[t+1]),V(g.PB,g.idxB[t+2]));
+    for(let t=0;t<g.wp.length;t+=9) T([g.wp[t],g.wp[t+1],g.wp[t+2]],[g.wp[t+3],g.wp[t+4],g.wp[t+5]],[g.wp[t+6],g.wp[t+7],g.wp[t+8]]);
+    // yukarı = Z olacak şekilde döndür, tabanı Z=0'a oturt, mm'ye ölçekle
+    const M=p=>[p[0]*k,-p[2]*k,(p[1]+state.H/2)*k];
+    const buf=new ArrayBuffer(84+tris.length*50), dv=new DataView(buf);
+    const hd='ColorDetect STL'; for(let i=0;i<hd.length;i++) dv.setUint8(i,hd.charCodeAt(i));
+    dv.setUint32(80,tris.length,true); let o=84;
+    for(const t of tris){ const a=M(t[0]),b=M(t[1]),c=M(t[2]);
+      const ux=b[0]-a[0],uy=b[1]-a[1],uz=b[2]-a[2], vx=c[0]-a[0],vy=c[1]-a[1],vz=c[2]-a[2];
+      let nx=uy*vz-uz*vy, ny=uz*vx-ux*vz, nz=ux*vy-uy*vx; const L=Math.hypot(nx,ny,nz)||1; nx/=L; ny/=L; nz/=L;
+      [nx,ny,nz,...a,...b,...c].forEach((v,i)=>dv.setFloat32(o+i*4,v,true)); o+=50; }
+    const url=URL.createObjectURL(new Blob([buf],{type:'model/stl'})), el2=document.createElement('a');
+    el2.href=url; el2.download='colordetect-model.stl'; document.body.appendChild(el2); el2.click(); el2.remove(); setTimeout(()=>URL.revokeObjectURL(url),4000);
+    return true;
   }
   function recolor(){
     if(!state.cu) return; const cv=_recolorCanvas(state.cu,state.color,state.meanL);
     const t=new THREE.CanvasTexture(cv); t.encoding=THREE.sRGBEncoding; t.anisotropy=4; t.flipY=true;
-    const old=state.tex; state.tex=t; mats[0].map=t; mats[1].map=t; mats.forEach(m=>m.needsUpdate=true); if(old) old.dispose();
+    const old=state.tex; state.tex=t; mats.forEach(m=>{ m.map=t; m.needsUpdate=true; }); if(old) old.dispose();
   }
   function finish(){ const f=FIN[state.finish]||FIN.satin; mats.forEach(m=>{ m.roughness=f[0]; m.metalness=f[1]; }); }
   const cam={az:.5,el:.16,dist:9,ty:1.4}; let lastI=0, drag=null;
@@ -1110,13 +1228,17 @@ function mountPhoto(container,imgUrl,hexes,opts={}){
     camera.position.set(d*Math.cos(cam.el)*Math.sin(cam.az),cam.ty+d*Math.sin(cam.el),d*Math.cos(cam.el)*Math.cos(cam.az)); camera.lookAt(0,cam.ty,0);
     renderer.render(scene,camera); }
   raf=requestAnimationFrame(frame);
-  const im=new Image(); im.onload=()=>{ if(alive) build(im); }; im.onerror=()=>{}; if(/^https?:/.test(imgUrl)) im.crossOrigin='anonymous'; im.src=imgUrl;
+  const im=new Image(); im.onload=()=>{ if(!alive) return; const cu=build(im);
+      const need=opts.cut!==false && opts.ml!==false && (opts.ml==='force' || cu.bgSd>20 || !cu.fitted);
+      if(need){ opts.onStatus&&opts.onStatus('Nesne yapay zekâ ile algılanıyor… (ilk seferde birkaç saniye sürebilir)');
+        _mlMask(imgUrl).then(m=>{ if(alive){ build(im,m); opts.onStatus&&opts.onStatus('Nesne algılandı.'); } }).catch(()=>{ opts.onStatus&&opts.onStatus('Gelişmiş ayırma şu an çalışmadı; basit ayırma kullanıldı.'); }); } };
+  im.onerror=()=>{}; if(/^https?:/.test(imgUrl)) im.crossOrigin='anonymous'; im.src=imgUrl;
   function dispose(){ alive=false; cancelAnimationFrame(raf); if(ro) ro.disconnect(); if(vio) vio.disconnect();
     el.removeEventListener('pointerdown',pd); el.removeEventListener('pointermove',pm); el.removeEventListener('pointerup',pu); el.removeEventListener('pointercancel',pu); el.removeEventListener('pointerleave',pu); el.removeEventListener('wheel',wh);
     scene.traverse(o=>{ if(o.geometry) o.geometry.dispose(); }); mats.forEach(m=>m.dispose()); if(state.tex) state.tex.dispose();
     renderer.dispose(); try{renderer.forceContextLoss();}catch(e){} if(el.parentNode) el.parentNode.removeChild(el); }
   CLEAN3D.push(dispose);
-  return {setColor:h=>{ state.color=h||null; recolor(); }, setFinish:f=>{ state.finish=f; finish(); }, dispose};
+  return {setColor:h=>{ state.color=h||null; recolor(); }, setFinish:f=>{ state.finish=f; finish(); }, exportSTL, dispose};
 }
 
 function sampleObjectUrl(h){
@@ -1354,11 +1476,17 @@ function renderAnalyze(){
           </div>
           <div class="viewer-bottom">
             <div class="colchips"><button data-h="" class="${!S.color?'on':''}" onclick="setObjColor(null)" title="Orijinal renk"><i style="background:conic-gradient(#999,#ddd,#999)"></i>Orijinal</button>${hexes.map(h=>`<button data-h="${h}" class="${S.color===h?'on':''}" onclick="setObjColor('${h}')" title="${h}"><i style="background:${h}"></i></button>`).join('')}</div>
-            <span class="hint-mini">${S.imgDataUrl?`<a onclick="toggleCut()" style="cursor:pointer;text-decoration:underline">${S.cut===false?'Arka planı ayır':'Düz plaka göster'}</a> · `:''}sürükle: döndür</span>
+            <span class="hint-mini">${S.imgDataUrl?`<a onclick="toggleCut()" style="cursor:pointer;text-decoration:underline">${S.cut===false?'Arka planı ayır':'Düz plaka göster'}</a> · <a onclick="toggleML()" style="cursor:pointer;text-decoration:underline">${S.ml?'Basit ayırma':'Gelişmiş ayırma'}</a> · `:''}sürükle: döndür</span>
+          </div>
           </div>
         </div>
       </div>
 
+      <div class="actions-row rv in" style="display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;margin:16px 0 4px">
+        <select id="stlSize" style="width:auto;padding:10px 12px;font-size:13px"><option value="50">5 cm</option><option value="80" selected>8 cm</option><option value="100">10 cm</option><option value="150">15 cm</option><option value="200">20 cm</option></select>
+        <button class="btn-save secondary" style="width:auto;padding:11px 18px;font-size:14px" onclick="downloadSTL()">⬇ STL indir (3D baskı)</button>
+        <button class="btn-save" style="width:auto;padding:11px 18px;font-size:14px" onclick="shareFromViewer()">Pazar Yerinde Paylaş</button>
+      </div>
       ${real?renderResult():''}
     </div>
   </section>`;
@@ -1370,7 +1498,7 @@ function renderResult(){
     <h3 style="font-size:22px;">Sonuç</h3>
     ${ai.objectType||ai.descriptionTr?`<div class="ai-box"><b>Algılanan:</b> ${esc(ai.objectType||'')}${ai.descriptionTr?' — '+esc(ai.descriptionTr):''}${ai.mood?`<br><b>Ruh hali:</b> ${esc(ai.mood)}`:''}</div>`:''}
     <div class="swatches">
-      ${r.palette.map(c=>`<div class="swatch"><div class="fill" style="background:${c.hex}"></div><div class="meta"><div class="hex">${c.hex}</div><div class="name">${esc(c.name)}</div>${c.meaning?`<div class="mean">${esc(c.meaning)}</div>`:''}</div></div>`).join('')}
+      ${r.palette.map(c=>`<div class="swatch"><div class="fill" style="background:${c.hex}"></div><div class="meta"><div class="name">${esc(c.name)}</div>${c.meaning?`<div class="mean">${esc(c.meaning)}</div>`:''}</div></div>`).join('')}
     </div>
     <div class="ai-summary">${esc(r.summary)}</div>
     ${(r.tips&&r.tips.length)?`<div class="tips"><b>Uygulama ipuçları</b><ul>${r.tips.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></div>`:''}
@@ -1386,11 +1514,15 @@ let STAGE=null;
 function mountStage(){
   const el=document.getElementById('stage3d'); if(!el) return;
   const url=S.imgDataUrl||sampleObjectUrl(currentHexes());
-  STAGE=mountPhoto(el,url,currentHexes(),{color:S.color,finish:S.finish,cut:S.cut!==false,onFallback:()=>toast('Arka plan net ayrılamadı; ürün plaka olarak gösteriliyor.')});
+  STAGE=mountPhoto(el,url,currentHexes(),{color:S.color,finish:S.finish,cut:S.cut!==false,ml:S.ml?'force':undefined,onStatus:m=>toast(m),onFallback:()=>toast('Arka plan net ayrılamadı; ürün plaka olarak gösteriliyor.')});
 }
 function setObjColor(h){ S.color=h; if(STAGE) STAGE.setColor(h); document.querySelectorAll('.colchips button').forEach(b=>b.classList.toggle('on',(b.dataset.h||'')===(h||''))); }
 function setFinish(f){ S.finish=f; if(STAGE) STAGE.setFinish(f); document.querySelectorAll('.seg button').forEach(b=>b.classList.toggle('on',b.dataset.f===f)); }
 function toggleCut(){ S.cut=!(S.cut!==false); render(); }
+function toggleML(){ S.ml=!S.ml; render(); }
+function downloadSTL(){ if(!STAGE||!STAGE.exportSTL) return toast('Model henüz hazır değil.'); const mm=Number((document.getElementById('stlSize')||{}).value)||80; if(STAGE.exportSTL(mm)) toast('STL indirildi. Baskı için dilimleyicide (Cura, PrusaSlicer) aç; taban eğri olduğu için destek eklemen gerekebilir.'); else toast('Model henüz hazır değil.'); }
+function shareFromViewer(){ if(!AUTH){ openAuthModal('login'); toast('Paylaşmak için önce giriş yapmalısın.'); return; } if(!S.currentAnalysisId){ toast('Önce Analiz Et\'e basarak sonucu oluştur, sonra paylaş.'); return; } publishAnalysis(); }
+window.toggleML=toggleML; window.downloadSTL=downloadSTL; window.shareFromViewer=shareFromViewer;
 window.setObjColor=setObjColor; window.setFinish=setFinish; window.toggleCut=toggleCut;
 function previewSample(i){
   S.preview=SAMPLES[i]; S.result=null; S.currentAnalysisId=null;
@@ -1551,10 +1683,12 @@ function renderDetail(){
             <div class="viewer-top"><div class="seg">${[['mat','Mat'],['satin','Saten'],['gloss','Parlak'],['metal','Metalik']].map(([f,l])=>`<button data-f="${f}" class="${(S.finish||'satin')===f?'on':''}" onclick="setFinish('${f}')">${l}</button>`).join('')}</div></div>
             <div class="viewer-bottom"><div class="colchips"><button data-h="" class="${!S.color?'on':''}" onclick="setObjColor(null)"><i style="background:conic-gradient(#999,#ddd,#999)"></i>Orijinal</button>${hexes.map(h=>`<button data-h="${h}" class="${S.color===h?'on':''}" onclick="setObjColor('${h}')"><i style="background:${h}"></i></button>`).join('')}</div><span class="hint-mini">sürükle: döndür</span></div>
           </div>
-          <div class="swatches">${p.palette.map(c=>`<div class="swatch"><div class="fill" style="background:${c.hex}"></div><div class="meta"><div class="hex">${c.hex}</div><div class="name">${esc(c.name)}</div>${c.meaning?`<div class="mean">${esc(c.meaning)}</div>`:''}</div></div>`).join('')}</div>
+          <div class="swatches">${p.palette.map(c=>`<div class="swatch"><div class="fill" style="background:${c.hex}"></div><div class="meta"><div class="name">${esc(c.name)}</div>${c.meaning?`<div class="mean">${esc(c.meaning)}</div>`:''}</div></div>`).join('')}</div>
         </div>
         <div class="d-card">
-          <div style="font-size:13px;color:var(--ink2);">${esc(p.author)} tarafından paylaşıldı · ${Number(p.views||0)} görüntülenme</div>
+          <div class="seller-row">${p.author_handle?`<div class="avatar sm" style="cursor:pointer" onclick="openUser('${esc(p.author_handle)}')">${initial(p.author_company||p.author)}</div>`:''}
+            <div style="flex:1;min-width:0"><a onclick="${p.author_handle?`openUser('${esc(p.author_handle)}')`:''}"><b>${esc(p.author_company||p.author)}</b></a>${p.author_type==='company'?' <span class="cbadge">Şirket</span>':''}<br><small>${p.author_handle?'@'+esc(p.author_handle)+' · ':''}${Number(p.views||0)} görüntülenme</small></div>
+            ${mine?'':followBtn({id:p.user_id,is_following:!!p.author_followed})}</div>
           <h2 style="font-size:34px;margin-top:6px;">${esc(p.title||p.ai_object_type||label(PURPOSE_OPTS,p.purpose))}</h2>
           <div class="tag-row"><span class="tag">${label(PURPOSE_OPTS,p.purpose)}</span><span class="tag">${label(AGE_OPTS,p.age_group)}</span><span class="tag">${label(PLACE_OPTS,p.place)}</span></div>
           <p style="margin-top:14px;font-size:16px;color:var(--ink);">${esc(p.summary||'')}</p>
@@ -1566,6 +1700,8 @@ function renderDetail(){
           <div style="display:flex;gap:10px;margin:24px 0;flex-wrap:wrap;">
             <button class="like-btn ${LIKES_STATE.liked?'liked':''}" onclick="toggleLike('${p.id}')">${LIKES_STATE.liked?'♥':'♡'} Beğen (${p.like_count})</button>
             <button class="btn-lg secondary" style="padding:10px 22px;font-size:14px;" onclick="toggleSave('${p.id}')">${LIKES_STATE.saved?'Kaydedildi ✓':'Kaydet'}</button>
+            <button class="btn-lg secondary" style="padding:10px 22px;font-size:14px;" onclick="openAddToBoard('${p.id}')">Koleksiyona ekle</button>
+            ${mine?'':`<button class="btn-lg secondary" style="padding:10px 22px;font-size:14px;" onclick="openChat('${p.user_id}','${p.id}')">Satıcıya yaz</button>`}
           </div>
           <h3 style="font-size:18px;margin-top:28px;">Yorumlar (${COMMENTS_STATE.length})</h3>
           <div>${COMMENTS_STATE.map(c=>`<div class="comment"><div class="who">${esc(c.author)}</div><p>${esc(c.text)}</p></div>`).join('')||'<p style="font-size:14px;margin-top:8px;">Henüz yorum yok.</p>'}</div>
@@ -1726,6 +1862,7 @@ function renderProfile(){
       <div class="product-grid" style="margin-bottom:60px;">
         ${PROFILE_MINE.length?PROFILE_MINE.map(p=>productCard(p,p.is_public)).join(''):'<div class="empty">Henüz bir analizin yok.<br><button class="btn-lg primary" onclick="setView(\'analyze\')">İlk analizini yap</button></div>'}
       </div>
+      ${profileEditHtml()}
       <div class="m-title"><h3>Hesap ve güvenlik</h3><span>Oturumlar, şifre, veri</span></div>
       <div class="d-card" style="max-width:640px;margin-bottom:60px;">
         <div class="field" style="margin-top:0"><label>Mevcut şifre</label><input type="password" id="pwCur" autocomplete="current-password"></div>
@@ -1840,6 +1977,8 @@ const LEGAL={
   <h3>6. Haklarınız</h3><p>KVKK m.11 haklarının tamamı için “Haklarınız” sekmesine bak.</p>`],
  gizlilik:['Gizlilik Politikası',()=>`
   <p>ColorDetect, verilerini yalnızca hizmeti sunmak için kullanır; satmaz.</p>
+  <h3>Telefon numarası ve rehber eşleştirme</h3><p>Kayıtta telefon numaranı alırız; amaç hesabını tanımak, arkadaşlarının seni bulabilmesini sağlamak ve sipariş bildirimleridir. “Rehberden arkadaş bul” özelliğini kullanırsan rehberindeki numaralar cihazında/tarayıcında geri döndürülemez bir özete (SHA-256) çevrilir ve yalnızca kayıtlı kullanıcılarla eşleştirmek için sunucuya gönderilir; <b>bu liste saklanmaz</b>. Telefon numaranla bulunmayı Profil › Herkese açık profilim bölümünden istediğin zaman kapatabilirsin. Rehberindeki kişilerin numaralarını yalnızca onların bilgisi dahilinde paylaşmalısın.</p>
+  <h3>Mesajlar ve profil</h3><p>Gönderdiğin mesajlar, yazıştığın kişi ve “herkese açık” profilinde gösterdiğin bilgiler (kullanıcı adı, isim/şirket adı, biyografi, paylaştığın ürünler) hizmetin sunulması için saklanır. Hesabını silersen bunlar da silinir.</p>
   <h3>Görsellerin</h3><p>Analiz için yüklediğin görsel, renk analizi yapılması amacıyla yapay zekâ sağlayıcısına gönderilir. Pazar yerinde paylaştığını seçtiğin ürünlerin görseli herkese açık görünür; “Özel” analizlerin yalnızca sana görünür.</p>
   <h3>Güvenlik</h3><p>Şifreler geri döndürülemez biçimde (bcrypt) saklanır; iki adımlı doğrulama, hatalı girişte hesap kilidi ve tüm cihazlardan çıkış özellikleri sunulur. Hiçbir sistem %100 güvenli değildir; şüpheli durumda şifreni değiştir ve bize yaz.</p>
   <h3>Çocuklar</h3><p>Hizmet 18 yaş altı kullanıcılar için ebeveyn/vasi gözetiminde kullanılmalıdır.</p>
@@ -1872,6 +2011,330 @@ function renderLegal(){
   </div></section></div>`;
 }
 
+/* ============ SOSYAL AĞ ============ */
+const SOC={ q:'', results:null, companies:null, feed:null, profile:null, boards:null, board:null, convs:null, thread:[], peer:null, draft:'', chatProduct:null, unread:0, abort:null, matches:null };
+function initial(n){ return esc((n||'?').charAt(0).toUpperCase()); }
+function isMe(id){ return !!(AUTH&&AUTH.user&&AUTH.user.id===id); }
+function needLogin(msg){ if(AUTH) return false; openAuthModal('login'); if(msg) toast(msg); return true; }
+function miniCard(p,who){
+  return `<div class="product-card rv in" onclick="openProduct('${p.id}')">
+    <div class="product-thumb" style="background:${gradOf(p.palette)}">${p.has_image?`<img class="pimg" loading="lazy" src="${imgUrl(p.id)}" alt="">`:''}<div class="dotsr">${p.palette.map(c=>`<i style="background:${c.hex}"></i>`).join('')}</div>${p.price_kurus?`<span class="price">${fmtTry(p.price_kurus)}</span>`:''}</div>
+    <div class="product-body">${who?`<div class="who" onclick="event.stopPropagation();openUser('${esc(who)}')" style="cursor:pointer">@${esc(who)}</div>`:''}<h3>${esc(p.title||p.ai_object_type||'Ürün')}</h3>
+      <div class="meta-row"><span>♥ ${p.like_count||0}</span><span>💬 ${p.comment_count||0}</span></div></div></div>`;
+}
+function followBtn(u){
+  if(isMe(u.id)) return '';
+  return `<button class="btn-lg ${u.is_following?'secondary':'primary'} fbtn" data-uid="${u.id}" style="padding:8px 18px;font-size:13.5px" onclick="event.stopPropagation();toggleFollow('${u.id}')">${u.is_following?'Takiptesin':'Takip et'}</button>`;
+}
+function personRow(u){
+  return `<div class="person" onclick="openUser('${esc(u.handle)}')"><div class="avatar sm">${initial(u.company_name||u.name)}</div>
+    <div class="pinfo"><b>${esc(u.company_name||u.name)}${u.account_type==='company'?' <span class="cbadge">Şirket</span>':''}</b><span>@${esc(u.handle)} · ${u.followers} takipçi${u.product_count!==undefined?` · ${u.product_count} ürün`:''}</span></div>${followBtn(u)}</div>`;
+}
+async function toggleFollow(id){
+  if(needLogin('Takip etmek için giriş yap.')) return;
+  try{
+    const d=await api(`/api/users/${id}/follow`,{method:'POST'});
+    document.querySelectorAll(`.fbtn[data-uid="${id}"]`).forEach(b=>{ b.textContent=d.following?'Takiptesin':'Takip et'; b.className='btn-lg '+(d.following?'secondary':'primary')+' fbtn'; });
+    if(SOC.profile&&SOC.profile.user.id===id){ SOC.profile.user.followers+=d.following?1:-1; SOC.profile.user.is_following=d.following; const el=document.getElementById('followersCount'); if(el) el.textContent=SOC.profile.user.followers; }
+    if(PRODUCT_STATE&&PRODUCT_STATE.user_id===id) PRODUCT_STATE.author_followed=d.following;
+    SOC.feed=null;
+  }catch(e){ toast(e.message); }
+}
+window.toggleFollow=toggleFollow;
+
+/* ---- Topluluk: arama, şirketler, akış, rehber ---- */
+async function loadCompanies(){ try{ SOC.companies=(await api('/api/companies')).items; }catch(e){ SOC.companies=[]; } if(S.view==='people'){ const el=document.getElementById('companiesBox'); if(el) el.innerHTML=companiesHtml(); } }
+async function loadFeed(){ try{ SOC.feed=(await api('/api/feed')).items; }catch(e){ SOC.feed=[]; } if(S.view==='people'){ const el=document.getElementById('feedBox'); if(el) el.innerHTML=feedHtml(); } }
+function companiesHtml(){ if(SOC.companies===null) return '<div class="skeleton" style="height:70px"></div>'; return SOC.companies.length?SOC.companies.map(personRow).join(''):'<div class="empty" style="padding:24px">Henüz şirket hesabı yok.</div>'; }
+function feedHtml(){
+  if(!AUTH) return '<div class="empty" style="padding:24px">Takip ettiklerinin ürünlerini görmek için giriş yap.</div>';
+  if(SOC.feed===null){ loadFeed(); return '<div class="skeleton" style="height:120px"></div>'; }
+  return SOC.feed.length?`<div class="product-grid">${SOC.feed.map(p=>miniCard(p,p.handle)).join('')}</div>`:'<div class="empty" style="padding:24px">Henüz kimseyi takip etmiyorsun ya da takip ettiklerin ürün paylaşmamış.<br>Yukarıdan kullanıcı ve şirket ara.</div>';
+}
+function peopleResultsHtml(){
+  if(SOC.q.length>=2) return SOC.results===null?'<div class="skeleton" style="height:70px"></div>':(SOC.results.length?SOC.results.map(personRow).join(''):'<div class="empty" style="padding:24px">Sonuç bulunamadı.</div>');
+  if(SOC.matches) return `<div class="m-title"><h3>Rehberinde ColorDetect’te olanlar</h3><span>${SOC.matches.length} kişi</span></div>${SOC.matches.length?SOC.matches.map(personRow).join(''):'<div class="empty" style="padding:24px">Rehberindekilerden henüz kimse ColorDetect’te değil. Davet etmeyi dene.</div>'}`;
+  return '';
+}
+let peopleDebounce;
+function onPeopleSearch(q){
+  SOC.q=q.trim().replace(/^@/,''); SOC.results=null;
+  const box=()=>document.getElementById('peopleResults'); if(box()) box().innerHTML=peopleResultsHtml();
+  clearTimeout(peopleDebounce);
+  if(SOC.q.length<2) return;
+  peopleDebounce=setTimeout(async()=>{ try{ const d=await api('/api/users/search?q='+encodeURIComponent(SOC.q)); if(S.view==='people'&&SOC.q.length>=2){ SOC.results=d.items; if(box()) box().innerHTML=peopleResultsHtml(); } }catch(e){ toast(e.message); } },320);
+}
+window.onPeopleSearch=onPeopleSearch;
+function renderPeople(){
+  if(SOC.companies===null) loadCompanies();
+  return `<div class="light-page"><section class="m-body"><div class="wrap-wide">
+    <div class="p-head rv in"><div><h2 style="font-size:36px;">Topluluk</h2><p>Kullanıcıları ve şirketleri bul, takip et, fikirlerini paylaş.</p></div></div>
+    <div class="m-search" style="margin:18px 0"><input class="search" id="peopleSearch" placeholder="Kullanıcı adı, isim ya da şirket ara…" value="${esc(SOC.q)}" oninput="onPeopleSearch(this.value)"></div>
+    <div class="soc-actions">
+      <button class="btn-lg secondary" onclick="openContactsModal()">📇 Rehberden arkadaş bul</button>
+      <button class="btn-lg secondary" onclick="inviteFriends()">Arkadaşını davet et</button>
+      <button class="btn-lg secondary" onclick="setView('boards')">Koleksiyonlarım</button>
+    </div>
+    <div id="peopleResults" class="plist">${peopleResultsHtml()}</div>
+    <div class="m-title" style="margin-top:36px"><h3>Şirketler</h3><span>Takip et, ürünlerine yorum yap</span></div>
+    <div id="companiesBox" class="plist">${companiesHtml()}</div>
+    <div class="m-title" style="margin-top:36px"><h3>Takip ettiklerim</h3><span>Yeni ürünler</span></div>
+    <div id="feedBox">${feedHtml()}</div>
+  </div></section></div>`;
+}
+
+/* ---- Rehberden arkadaş bul (numaralar tarayıcıda SHA-256'lanır, saklanmaz) ---- */
+function normPhone(p){
+  let s=String(p).replace(/[\s()\-.]/g,''); if(s.startsWith('00')) s='+'+s.slice(2);
+  if(s.startsWith('+')) return /^\+\d{10,15}$/.test(s)?s:null;
+  if(!/^\d+$/.test(s)) return null;
+  if(s.length===11&&s[0]==='0') return '+90'+s.slice(1);
+  if(s.length===10&&s[0]==='5') return '+90'+s;
+  if(s.length===12&&s.startsWith('90')) return '+'+s;
+  return null;
+}
+async function sha256hex(t){ const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t)); return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join(''); }
+function openContactsModal(){
+  if(needLogin('Rehberden arkadaş bulmak için giriş yap.')) return;
+  const canPick=('contacts' in navigator)&&('ContactsManager' in window);
+  document.getElementById('modalRoot').innerHTML=`<div class="modal-backdrop" onclick="if(event.target===this) closeModal()"><div class="modal">
+    <span class="modal-close" onclick="closeModal()">✕</span><h2>Rehberden arkadaş bul</h2>
+    <p class="sub">Rehberindeki numaralar tarayıcında şifrelenir; sunucuya yalnızca şifreli özetler gönderilir, eşleşme sonrası <b>hiçbir numara saklanmaz</b>. Sadece telefonla bulunmaya izin veren kullanıcılar görünür.</p>
+    <input type="file" id="vcfInput" accept=".vcf,.csv,text/vcard,text/csv,text/plain" style="display:none" onchange="onContactsFile(event)">
+    ${canPick?`<button class="btn-analyze" onclick="pickContacts()">Rehberimi seç</button>`:''}
+    <button class="btn-analyze" style="${canPick?'background:transparent;color:var(--blue);border:1px solid var(--blue);':''}" onclick="document.getElementById('vcfInput').click()">Rehber dosyası yükle (.vcf / .csv)</button>
+    <p style="font-size:12.5px;margin-top:14px;color:var(--ink2)">${canPick?'':'Bu tarayıcı rehbere doğrudan erişemiyor. Telefonundan rehberi “.vcf” olarak dışa aktarıp buraya yükleyebilirsin (iPhone: Kişiler › Paylaş; Android: Kişiler › Dışa aktar).'}</p>
+  </div></div>`;
+}
+window.openContactsModal=openContactsModal;
+async function pickContacts(){
+  try{ const picked=await navigator.contacts.select(['tel'],{multiple:true}); const tels=[]; picked.forEach(c=>(c.tel||[]).forEach(t=>tels.push(t))); await matchTels(tels); }
+  catch(e){ if(e&&e.name!=='AbortError') toast('Rehbere erişilemedi.'); }
+}
+window.pickContacts=pickContacts;
+async function onContactsFile(ev){
+  const f=ev.target.files[0]; if(!f) return;
+  const text=await f.text(); const m=text.match(/\+?\d[\d\s().\-]{8,}\d/g)||[];
+  await matchTels(m);
+}
+window.onContactsFile=onContactsFile;
+async function matchTels(tels){
+  const set=new Set(); tels.forEach(t=>{ const n=normPhone(t); if(n) set.add(n); });
+  if(!set.size){ toast('Geçerli numara bulunamadı.'); return; }
+  try{
+    const hashes=await Promise.all([...set].slice(0,2000).map(sha256hex));
+    const d=await api('/api/contacts/match',{method:'POST',body:{hashes}});
+    SOC.matches=d.items; SOC.q=''; closeModal();
+    if(S.view!=='people') setView('people'); else render();
+    toast(d.items.length?`${d.items.length} kişi ColorDetect’te.`:'Rehberindekilerden henüz kimse ColorDetect’te değil.');
+  }catch(e){ toast(e.message); }
+}
+function inviteFriends(){
+  const url=location.origin, text='ColorDetect’te renk analizi yap, 3D’de gör ve pazarda paylaş: ';
+  if(navigator.share){ navigator.share({title:'ColorDetect',text,url}).catch(()=>{}); }
+  else{ try{ navigator.clipboard.writeText(text+url); toast('Davet bağlantısı kopyalandı.'); }catch(e){ toast(url); } }
+}
+window.inviteFriends=inviteFriends;
+
+/* ---- Kullanıcı / şirket profili (Instagram tarzı) ---- */
+async function openUser(handle){
+  SOC.profile=null; S.userHandle=handle; setView('user');
+  try{ SOC.profile=await api('/api/users/'+encodeURIComponent(handle)); render(); }catch(e){ toast(e.message); setView('people'); }
+}
+window.openUser=openUser;
+function renderUser(){
+  if(!SOC.profile) return `<div class="light-page"><section class="m-body"><div class="wrap-wide"><div class="skeleton" style="height:200px"></div></div></section></div>`;
+  const u=SOC.profile.user, items=SOC.profile.items, co=u.account_type==='company';
+  return `<div class="light-page"><section class="m-body"><div class="wrap-wide">
+    <span class="back-link" onclick="setView('people')">‹ Topluluk</span>
+    <div class="uhead rv in">
+      <div class="avatar big">${initial(u.company_name||u.name)}</div>
+      <div class="uinfo">
+        <h2>${esc(u.company_name||u.name)}${co?' <span class="cbadge">Şirket</span>':''}</h2>
+        <div class="uhandle">@${esc(u.handle)}</div>
+        ${u.bio?`<p>${esc(u.bio)}</p>`:''}
+        <div class="ustats"><span><b>${u.product_count}</b> ürün</span><a onclick="showFollowList('followers')"><b id="followersCount">${u.followers}</b> takipçi</a><a onclick="showFollowList('following')"><b>${u.following}</b> takip</a></div>
+        <div class="uactions">${u.is_me?`<button class="btn-lg secondary" onclick="setView('profile')">Profili düzenle</button>`:`${followBtn(u)}<button class="btn-lg secondary" style="padding:8px 18px;font-size:13.5px" onclick="openChat('${u.id}')">Mesaj gönder</button>`}</div>
+      </div>
+    </div>
+    <div class="m-title"><h3>${co?'Ürünler':'Paylaşımlar'}</h3><span>${items.length}</span></div>
+    <div class="product-grid">${items.length?items.map(p=>miniCard(p)).join(''):'<div class="empty">Henüz paylaşılan bir ürün yok.</div>'}</div>
+  </div></section></div>`;
+}
+async function showFollowList(kind){
+  if(!SOC.profile) return;
+  document.getElementById('modalRoot').innerHTML=`<div class="modal-backdrop" onclick="if(event.target===this) closeModal()"><div class="modal"><span class="modal-close" onclick="closeModal()">✕</span><h2>${kind==='followers'?'Takipçiler':'Takip edilenler'}</h2><div id="flBox" class="plist"><div class="skeleton" style="height:60px"></div></div></div></div>`;
+  try{ const d=await api(`/api/users/${encodeURIComponent(SOC.profile.user.handle)}/${kind}`); document.getElementById('flBox').innerHTML=d.items.length?d.items.map(u=>personRow(u).replace('onclick="openUser(','onclick="closeModal();openUser(')).join(''):'<p style="margin-top:10px">Henüz kimse yok.</p>'; }catch(e){ toast(e.message); }
+}
+window.showFollowList=showFollowList;
+
+/* ---- Koleksiyonlar (Pinterest tarzı, arkadaşlarla ortak) ---- */
+async function loadBoards(){ try{ SOC.boards=(await api('/api/boards')).items; }catch(e){ SOC.boards=[]; toast(e.message); } if(S.view==='boards') render(); }
+function boardCover(b){ const c=(b.covers||[]).filter(Boolean); return c.length?`linear-gradient(135deg,${c.join(',')}${c.length===1?','+c[0]:''})`:'linear-gradient(135deg,#efe8d8,#e0d6c0)'; }
+function renderBoards(){
+  if(!AUTH) return `<div class="light-page"><section class="m-body"><div class="wrap"><div class="empty">Koleksiyonlarını görmek için giriş yap.<br><button class="btn-lg primary" onclick="openAuthModal('login')">Giriş Yap</button></div></div></section></div>`;
+  if(SOC.boards===null){ loadBoards(); return `<div class="light-page"><section class="m-body"><div class="wrap-wide"><div class="product-grid"><div class="skeleton"></div><div class="skeleton"></div></div></div></section></div>`; }
+  return `<div class="light-page"><section class="m-body"><div class="wrap-wide">
+    <span class="back-link" onclick="setView('people')">‹ Topluluk</span>
+    <div class="p-head rv in"><div><h2 style="font-size:36px;">Koleksiyonlarım</h2><p>Beğendiklerini topla, arkadaşlarını ekleyip birlikte biriktirin.</p></div></div>
+    <div class="d-card" style="max-width:560px;margin:18px 0 30px"><div class="field" style="margin-top:0"><label>Yeni koleksiyon</label><input type="text" id="newBoard" maxlength="60" placeholder="Örn: Salon fikirleri" onkeydown="if(event.key==='Enter')createBoard()"></div>
+      <label class="chk"><input type="checkbox" id="newBoardPriv"><span>Özel (sadece sen ve eklediklerin görür)</span></label>
+      <button class="btn-lg primary" style="padding:10px 22px;font-size:14px;margin-top:14px" onclick="createBoard()">Oluştur</button></div>
+    <div class="product-grid">${SOC.boards.length?SOC.boards.map(b=>`<div class="product-card rv in" onclick="openBoard('${b.id}')"><div class="product-thumb" style="background:${boardCover(b)}"></div>
+      <div class="product-body"><h3>${esc(b.title)}</h3><div class="tag-row"><span class="tag">${b.item_count} ürün</span><span class="tag">${b.member_count+1} kişi</span>${b.is_private?'<span class="tag">Özel</span>':''}</div>${b.is_owner?'':`<div class="who">${esc(b.owner_name)} ile ortak</div>`}</div></div>`).join(''):'<div class="empty">Henüz koleksiyonun yok. Yukarıdan bir tane oluştur.</div>'}</div>
+  </div></section></div>`;
+}
+async function createBoard(){
+  if(needLogin()) return; const t=document.getElementById('newBoard').value.trim(); if(!t) return toast('Koleksiyona bir ad ver.');
+  try{ await api('/api/boards',{method:'POST',body:{title:t,isPrivate:document.getElementById('newBoardPriv').checked}}); SOC.boards=null; render(); toast('Koleksiyon oluşturuldu.'); }catch(e){ toast(e.message); }
+}
+window.createBoard=createBoard;
+async function openBoard(id){ SOC.board=null; S.boardId=id; setView('board'); try{ SOC.board=await api('/api/boards/'+id); render(); }catch(e){ toast(e.message); setView('boards'); } }
+window.openBoard=openBoard;
+function renderBoard(){
+  if(!SOC.board) return `<div class="light-page"><section class="m-body"><div class="wrap-wide"><div class="skeleton" style="height:200px"></div></div></section></div>`;
+  const b=SOC.board.board, items=SOC.board.items, mem=SOC.board.members;
+  return `<div class="light-page"><section class="m-body"><div class="wrap-wide">
+    <span class="back-link" onclick="setView('boards')">‹ Koleksiyonlarım</span>
+    <div class="p-head rv in"><div><h2 style="font-size:36px;">${esc(b.title)}</h2><p>${items.length} ürün${b.is_private?' · Özel':''}</p></div></div>
+    <div class="members">${mem.map(m=>`<span class="chip-m" onclick="openUser('${esc(m.handle)}')"><i class="avatar sm">${initial(m.name)}</i>${esc(m.name)}</span>`).join('')}</div>
+    ${b.is_owner?`<div class="comment-input" style="max-width:480px;margin:14px 0 6px"><input type="text" id="addMember" placeholder="Arkadaşını ekle: @kullaniciadi" onkeydown="if(event.key==='Enter')addMember('${b.id}')"><button class="btn-lg primary" style="padding:10px 20px;font-size:14px;" onclick="addMember('${b.id}')">Ekle</button></div>`:''}
+    <div class="product-grid" style="margin-top:20px">${items.length?items.map(p=>`<div style="position:relative">${miniCard(p,p.handle)}${b.can_edit?`<button class="rm-btn" title="Koleksiyondan kaldır" onclick="removeFromBoard('${b.id}','${p.id}')">✕</button>`:''}${p.added_by_name?`<div class="addedby">${esc(p.added_by_name)} ekledi</div>`:''}</div>`).join(''):'<div class="empty">Koleksiyon boş. Pazar yerinde bir üründe “Koleksiyona ekle”ye bas.</div>'}</div>
+    ${b.is_owner?`<button class="btn-lg secondary" style="margin:40px 0;padding:10px 20px;font-size:14px;color:#c0442f;border-color:#c0442f" onclick="deleteBoard('${b.id}')">Koleksiyonu sil</button>`:''}
+  </div></section></div>`;
+}
+async function addMember(id){ const h=document.getElementById('addMember').value.trim(); if(!h) return; try{ await api(`/api/boards/${id}/members`,{method:'POST',body:{handle:h}}); SOC.board=await api('/api/boards/'+id); SOC.boards=null; render(); toast('Arkadaşın eklendi.'); }catch(e){ toast(e.message); } }
+async function removeFromBoard(id,aid){ try{ await api(`/api/boards/${id}/items/${aid}`,{method:'DELETE'}); SOC.board=await api('/api/boards/'+id); SOC.boards=null; render(); }catch(e){ toast(e.message); } }
+async function deleteBoard(id){ if(!window.confirm('Koleksiyon silinsin mi? Bu geri alınamaz.')) return; try{ await api('/api/boards/'+id,{method:'DELETE'}); SOC.boards=null; setView('boards'); toast('Koleksiyon silindi.'); }catch(e){ toast(e.message); } }
+window.addMember=addMember; window.removeFromBoard=removeFromBoard; window.deleteBoard=deleteBoard;
+async function openAddToBoard(productId){
+  if(needLogin('Koleksiyona eklemek için giriş yap.')) return;
+  document.getElementById('modalRoot').innerHTML=`<div class="modal-backdrop" onclick="if(event.target===this) closeModal()"><div class="modal"><span class="modal-close" onclick="closeModal()">✕</span><h2>Koleksiyona ekle</h2><div id="atbBox"><div class="skeleton" style="height:60px"></div></div></div></div>`;
+  try{ const d=await api('/api/boards'); const el=document.getElementById('atbBox');
+    el.innerHTML=(d.items.length?d.items.map(b=>`<button class="atb-row" onclick="addToBoard('${b.id}','${productId}')"><i style="background:${boardCover(b)}"></i><span><b>${esc(b.title)}</b><small>${b.item_count} ürün${b.is_owner?'':' · ortak'}</small></span></button>`).join(''):'<p style="margin:10px 0">Henüz koleksiyonun yok, aşağıdan oluştur.</p>')
+      +`<div class="comment-input" style="margin-top:14px"><input type="text" id="atbNew" maxlength="60" placeholder="Yeni koleksiyon adı"><button class="btn-lg primary" style="padding:10px 18px;font-size:14px" onclick="createAndAdd('${productId}')">Oluştur</button></div>`; }
+  catch(e){ toast(e.message); }
+}
+window.openAddToBoard=openAddToBoard;
+async function addToBoard(bid,pid){ try{ await api(`/api/boards/${bid}/items`,{method:'POST',body:{analysisId:pid}}); SOC.boards=null; closeModal(); toast('Koleksiyona eklendi.'); }catch(e){ toast(e.message); } }
+async function createAndAdd(pid){ const t=document.getElementById('atbNew').value.trim(); if(!t) return toast('Bir ad yaz.'); try{ const d=await api('/api/boards',{method:'POST',body:{title:t}}); await addToBoard(d.board.id,pid); }catch(e){ toast(e.message); } }
+window.addToBoard=addToBoard; window.createAndAdd=createAndAdd;
+
+/* ---- Mesajlaşma (canlı: Server-Sent Events) ---- */
+function setUnread(n){ SOC.unread=Math.max(0,n); const b=document.getElementById('msgBadge'); if(b){ b.textContent=SOC.unread; b.style.display=SOC.unread?'inline-block':'none'; } }
+async function refreshUnread(){ if(!AUTH) return; try{ setUnread((await api('/api/messages/unread')).unread); }catch(e){} }
+async function startStream(){
+  if(!AUTH||SOC.abort) return;
+  const ac=new AbortController(); SOC.abort=ac;
+  try{
+    const res=await fetch(API_BASE+'/api/messages/stream',{headers:{Authorization:'Bearer '+AUTH.token},signal:ac.signal});
+    if(!res.ok||!res.body) throw new Error('stream');
+    const reader=res.body.getReader(), dec=new TextDecoder(); let buf='';
+    for(;;){ const {done,value}=await reader.read(); if(done) break; buf+=dec.decode(value,{stream:true});
+      let i; while((i=buf.indexOf('\n\n'))>=0){ const fr=buf.slice(0,i); buf=buf.slice(i+2); const ev=/event: (\w+)/.exec(fr), da=/data: (.*)/.exec(fr); if(ev&&da){ try{ onStreamEvent(ev[1],JSON.parse(da[1])); }catch(_){} } } }
+  }catch(e){}
+  SOC.abort=null; if(AUTH&&!ac.signal.aborted) setTimeout(startStream,3500);
+}
+function stopStream(){ if(SOC.abort){ try{ SOC.abort.abort(); }catch(e){} SOC.abort=null; } }
+function onStreamEvent(ev,m){
+  if(ev!=='message'||!AUTH) return;
+  const incoming=m.recipient_id===AUTH.user.id, peerId=incoming?m.sender_id:m.recipient_id;
+  SOC.convs=null;
+  if(S.view==='messages'&&SOC.peer&&SOC.peer.id===peerId){
+    if(!SOC.thread.some(x=>x.id===m.id)){ SOC.thread.push(m); renderChatPane(); }
+    if(incoming) api('/api/messages/with/'+peerId).catch(()=>{});
+    loadConvs(true);
+  }else if(incoming){ setUnread(SOC.unread+1); toast('Yeni mesajın var.'); if(S.view==='messages') loadConvs(true); }
+}
+async function loadConvs(keep){
+  try{ SOC.convs=(await api('/api/messages/conversations')).items; }catch(e){ SOC.convs=[]; }
+  if(S.view==='messages'){ const el=document.getElementById('convList'); if(el) el.innerHTML=convListHtml(); else if(!keep) render(); }
+}
+function convListHtml(){
+  if(SOC.convs===null) return '<div class="skeleton" style="height:60px"></div>';
+  return SOC.convs.length?SOC.convs.map(c=>`<div class="conv ${SOC.peer&&SOC.peer.id===c.user_id?'on':''}" onclick="openChat('${c.user_id}')"><div class="avatar sm">${initial(c.company_name||c.name)}</div><div class="pinfo"><b>${esc(c.company_name||c.name)}</b><span>${c.mine?'Sen: ':''}${esc(c.body.slice(0,46))}</span></div>${c.unread?`<span class="ubadge">${c.unread}</span>`:''}</div>`).join(''):'<p style="padding:14px;font-size:14px">Henüz mesajın yok. Bir profilden ya da üründen “Mesaj gönder”e bas.</p>';
+}
+async function openChat(userId,productId){
+  if(needLogin('Mesaj göndermek için giriş yap.')) return;
+  if(isMe(userId)) return toast('Kendine mesaj gönderemezsin.');
+  SOC.chatProduct=productId||null; SOC.thread=[]; SOC.peer=null;
+  if(S.view!=='messages') setView('messages');
+  try{
+    const d=await api('/api/messages/with/'+userId); SOC.peer=d.peer; SOC.thread=d.items;
+    if(productId&&PRODUCT_STATE&&!SOC.thread.length) SOC.draft=`Merhaba, “${PRODUCT_STATE.title||PRODUCT_STATE.ai_object_type||'ürün'}” ile ilgileniyorum.`;
+    refreshUnread(); loadConvs(true); render();
+    const inp=document.getElementById('chatInput'); if(inp){ inp.value=SOC.draft||''; SOC.draft=''; inp.focus(); }
+  }catch(e){ toast(e.message); }
+}
+window.openChat=openChat;
+function chatPaneHtml(){
+  if(!SOC.peer) return '<div class="chat-empty">Bir sohbet seç ya da bir profilden “Mesaj gönder”e bas.</div>';
+  const me=AUTH.user.id;
+  return `<div class="chat-head" onclick="openUser('${esc(SOC.peer.handle)}')"><div class="avatar sm">${initial(SOC.peer.company_name||SOC.peer.name)}</div><b>${esc(SOC.peer.company_name||SOC.peer.name)}</b><span>@${esc(SOC.peer.handle)}</span></div>
+    <div class="chat-body" id="chatBody">${SOC.thread.map(m=>`<div class="bub ${m.sender_id===me?'me':''}">${m.product_title?`<div class="bub-p" onclick="openProduct('${m.analysis_id}')">📎 ${esc(m.product_title)}</div>`:''}${esc(m.body)}<small>${new Date(m.created_at).toLocaleTimeString('tr-TR',{hour:'2-digit',minute:'2-digit'})}</small></div>`).join('')||'<div class="chat-empty">Sohbeti başlat.</div>'}</div>
+    <div class="chat-input"><input type="text" id="chatInput" maxlength="2000" placeholder="Mesaj yaz…" onkeydown="if(event.key==='Enter')sendMsg()"><button class="btn-lg primary" style="padding:10px 20px;font-size:14px" onclick="sendMsg()">Gönder</button></div>`;
+}
+function renderChatPane(){
+  const el=document.getElementById('chatPane'); if(!el) return;
+  const keep=(document.getElementById('chatInput')||{}).value||'';
+  el.innerHTML=chatPaneHtml(); const inp=document.getElementById('chatInput'); if(inp) inp.value=keep;
+  const b=document.getElementById('chatBody'); if(b) b.scrollTop=b.scrollHeight;
+}
+async function sendMsg(){
+  const inp=document.getElementById('chatInput'); if(!inp||!SOC.peer) return; const body=inp.value.trim(); if(!body) return;
+  inp.value='';
+  try{ const d=await api('/api/messages',{method:'POST',body:{toUserId:SOC.peer.id,body,analysisId:SOC.chatProduct||undefined}}); SOC.chatProduct=null;
+    if(!SOC.thread.some(x=>x.id===d.message.id)) SOC.thread.push(d.message); renderChatPane(); loadConvs(true); }
+  catch(e){ inp.value=body; toast(e.message); }
+}
+window.sendMsg=sendMsg;
+function renderMessages(){
+  if(!AUTH) return `<div class="light-page"><section class="m-body"><div class="wrap"><div class="empty">Mesajlarını görmek için giriş yap.<br><button class="btn-lg primary" onclick="openAuthModal('login')">Giriş Yap</button></div></div></section></div>`;
+  if(SOC.convs===null) loadConvs();
+  requestAnimationFrame(()=>{ renderChatPane(); });
+  return `<div class="light-page"><section class="m-body"><div class="wrap-wide">
+    <div class="p-head rv in"><div><h2 style="font-size:36px;">Mesajlar</h2><p>Satıcılarla ve arkadaşlarınla anlık yazış.</p></div></div>
+    <div class="chat-wrap"><div class="chat-side" id="convList">${convListHtml()}</div><div class="chat-main" id="chatPane"></div></div>
+  </div></section></div>`;
+}
+
+/* ---- Profil düzenleme alanı (telefon, kullanıcı adı, biyografi, şirket) ---- */
+function profileEditHtml(){
+  const m=PROFILE_ME||{};
+  return `<div class="m-title"><h3>Herkese açık profilim</h3><span>${m.handle?`<a style="color:var(--blue);cursor:pointer" onclick="openUser('${esc(m.handle)}')">Profilimi gör</a>`:''}</span></div>
+  <div class="d-card" style="max-width:640px;margin-bottom:50px">
+    <div class="field" style="margin-top:0"><label>Kullanıcı adı</label><input type="text" id="peHandle" maxlength="24" value="${esc(m.handle||'')}"></div>
+    <div class="field"><label>İsim</label><input type="text" id="peName" maxlength="80" value="${esc(m.name||'')}"></div>
+    ${m.accountType==='company'?`<div class="field"><label>Şirket adı</label><input type="text" id="peCompany" maxlength="80" value="${esc(m.companyName||'')}"></div>`:''}
+    <div class="field"><label>Biyografi</label><textarea id="peBio" rows="3" maxlength="300">${esc(m.bio||'')}</textarea></div>
+    <div class="field"><label>Telefon</label><input type="tel" id="pePhone" autocomplete="tel" value="${esc(m.phone||'')}" placeholder="0532 123 45 67"></div>
+    <label class="chk"><input type="checkbox" id="peFind" ${m.findByPhone!==false?'checked':''}><span>Rehberinde numaram olan arkadaşlarım beni ColorDetect’te bulabilsin.</span></label>
+    <button class="btn-lg primary" style="padding:10px 22px;font-size:14px;margin-top:16px" onclick="saveProfileEdit()">Kaydet</button>
+  </div>`;
+}
+async function saveProfileEdit(){
+  const body={handle:document.getElementById('peHandle').value.trim(),name:document.getElementById('peName').value.trim(),bio:document.getElementById('peBio').value,findByPhone:document.getElementById('peFind').checked};
+  const ph=document.getElementById('pePhone').value.trim(); if(ph) body.phone=ph;
+  const co=document.getElementById('peCompany'); if(co) body.companyName=co.value;
+  try{ const d=await api('/api/me/profile',{method:'PATCH',body}); AUTH.user=Object.assign(AUTH.user,{name:d.user.name,handle:d.user.handle,phone:d.user.phone,needsPhone:!d.user.phone}); setAuth(AUTH); PROFILE_ME=null; toast('Profilin güncellendi.'); render(); }
+  catch(e){ toast(e.message); }
+}
+window.saveProfileEdit=saveProfileEdit;
+
+/* ---- Telefon isteme (Google ile girenler / eski hesaplar) ---- */
+async function submitPhone(){
+  const phone=document.getElementById('phoneInput').value.trim(); if(!phone) return showAuthError('Telefon numaranı yaz.');
+  setAuthLoading(true);
+  try{ const d=await api('/api/me/profile',{method:'PATCH',body:{phone,findByPhone:document.getElementById('phoneFind').checked}}); AUTH.user.phone=d.user.phone; AUTH.user.needsPhone=false; setAuth(AUTH); closeModal(); toast('Telefon numaran kaydedildi.'); }
+  catch(e){ setAuthLoading(false,'Kaydet'); showAuthError(e.message); }
+}
+window.submitPhone=submitPhone;
+async function bootSocial(){
+  if(!AUTH) return;
+  try{ const me=await api('/api/auth/me'); AUTH.user=Object.assign(AUTH.user||{},me.user); setAuth(AUTH); if(me.user.needsPhone) openAuthModal('phone'); }catch(e){ return; }
+  refreshUnread(); startStream();
+}
+
 /* ============ ROOT ============ */
 function render(){
   cleanup3D(); STAGE=null;
@@ -1884,6 +2347,11 @@ function render(){
   else if(S.view==='detail') html=renderDetail();
   else if(S.view==='profile') html=renderProfile();
   else if(S.view==='legal') html=renderLegal();
+  else if(S.view==='people') html=renderPeople();
+  else if(S.view==='user') html=renderUser();
+  else if(S.view==='boards') html=renderBoards();
+  else if(S.view==='board') html=renderBoard();
+  else if(S.view==='messages') html=renderMessages();
   app.innerHTML=html+`<footer><div class="wrap"><span>© ColorDetect — renk psikolojisine dayalı analiz ve paylaşım platformu.</span><span style="display:flex;gap:14px;flex-wrap:wrap"><a onclick="openLegal('aydinlatma')">KVKK</a><a onclick="openLegal('gizlilik')">Gizlilik</a><a onclick="openLegal('cerez')">Çerezler</a><a onclick="openLegal('sartlar')">Şartlar</a><a onclick="openLegal('haklar')">Haklarınız</a></span></div></footer>`;
   observeReveals();
   requestAnimationFrame(()=>{
@@ -1894,6 +2362,7 @@ function render(){
 }
 fetch(API_BASE+'/api/auth/config').then(r=>r.json()).then(c=>{ CONFIG=c||CONFIG; loadGoogle(); }).catch(()=>{});
 render();
+bootSocial();
 try{
   const rt=new URLSearchParams(location.search).get('reset');
   if(rt){ RESET_TOKEN=rt; authTab='reset'; document.getElementById('modalRoot').innerHTML=renderAuthModal(); }
